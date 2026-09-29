@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "runninghub": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "runninghub-mcp@latest"
+      ],
+      "runtime": {
+        "type": "node",
+        "version": "20"
+      },
+      "npmRegistry": "https://registry.npmmirror.com",
+      "env": {
+        "RUNNINGHUB_API_KEY": "${RUNNINGHUB_API_KEY}"
+      },
+      "timeout": 30000
+    }
+  }
+}

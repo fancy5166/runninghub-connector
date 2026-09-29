@@ -1,0 +1,26 @@
+{
+  "name": "RunningHub 全能连接器",
+  "name_zh": "RunningHub 全能连接器",
+  "name_en": "RunningHub Connector",
+  "description": "RunningHub 多模态 AI 一站式能力：图像生成与编辑、视频生成、语音合成与音乐生成、3D 等 350+ 模型 API，支持 ComfyUI 工作流、AI 应用运行与 LLM 对话。搜索模型→提交任务→等待结果，一句话完成创作。由 AI芳程式 开发，问题反馈或建议请联系 zzdh518。",
+  "description_zh": "RunningHub 多模态 AI 一站式能力：图像生成与编辑、视频生成、语音合成与音乐生成、3D 等 350+ 模型 API，支持 ComfyUI 工作流、AI 应用运行与 LLM 对话。搜索模型→提交任务→等待结果，一句话完成创作。由 AI芳程式 开发，问题反馈或建议请联系 zzdh518。",
+  "description_en": "All-in-one RunningHub capabilities: 350+ model APIs for image, video, audio and 3D generation, plus ComfyUI workflows, AI apps and LLM chat. Search a model, submit a task, wait for the result. Developer: AI芳程式, feedback: zzdh518.",
+  "source": "runninghub",
+  "type": "mcp",
+  "version": "1.0.0",
+  "minWorkbuddyVersion": "4.23.0",
+  "author": "AI芳程式",
+  "feedback": "zzdh518",
+  "examples_zh": [
+    "用 RunningHub 的 seedream 文生图，画一只宇航猫，2K 分辨率",
+    "帮我把这张图用可灵图生视频做成 5 秒短片",
+    "用 RunningHub 工作流跑一下这个 workflowId 的图生图任务",
+    "用 RunningHub 的 TTS 把这段文字转成语音"
+  ],
+  "examples_en": [
+    "Generate an astronaut cat with RunningHub seedream text-to-image at 2K",
+    "Turn this image into a 5s video using Kling image-to-video on RunningHub",
+    "Run my RunningHub ComfyUI workflow with this workflowId",
+    "Use RunningHub TTS to read this text aloud"
+  ]
+}

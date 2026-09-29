@@ -1,0 +1,19 @@
+{
+  "title": "RunningHub API Key 配置",
+  "title_en": "RunningHub API Key Configuration",
+  "description": "连接你的 RunningHub 账号以调用图像/视频/音频等 AI 能力。凭证仅存储在本机 ~/.workbuddy 目录下。开发者：AI芳程式，反馈：zzdh518。",
+  "description_en": "Connect your RunningHub account. Credentials are stored locally only. Developer: AI芳程式, feedback: zzdh518.",
+  "docUrl": "https://www.runninghub.cn/enterprise-api/consumerApi",
+  "docLabel": "如何获取 RunningHub API Key？",
+  "fields": [
+    {
+      "key": "RUNNINGHUB_API_KEY",
+      "label": "RunningHub API Key",
+      "label_en": "RunningHub API Key",
+      "type": "password",
+      "required": true,
+      "placeholder": "在 RunningHub 控制台 - API Key 页面创建",
+      "description": "标准模型 API 需要企业级-共享 API Key；工作流/AI 应用亦支持消费级-会员 Key。"
+    }
+  ]
+}

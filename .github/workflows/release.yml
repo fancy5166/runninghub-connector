@@ -1,0 +1,30 @@
+name: release
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Pack connector package
+        run: node tools/pack.mjs
+      - name: Attach package to release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.zip
+          body: |
+            RunningHub 全能连接器 / RunningHub All-in-One Connector
+            开发者 / Developer: AI芳程式 ｜ 反馈 / Feedback: zzdh518
+
+            下载 zip 后上传到 WorkBuddy 开发者后台即可。
+            Download the zip and upload it to the WorkBuddy developer backend.
